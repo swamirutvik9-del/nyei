@@ -680,18 +680,16 @@ footer {
 }
 
 .footer-brand-mark {
-  width: 40px;
-  height: 40px;
-  background: var(--accent-green);
-  border-radius: var(--radius-sm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-weight: 700;
-  font-family: var(--font-serif);
-  font-size: 1rem;
   margin-bottom: 1rem;
+}
+
+.footer-brand-mark img {
+  height: 44px;
+  width: auto;
+  display: block;
+  background: white;
+  border-radius: 4px;
+  padding: 3px 6px;
 }
 
 .footer-brand-name {
@@ -815,18 +813,16 @@ footer {
 }
 
 .hero-emblem {
-  width: 80px;
-  height: 80px;
-  background: var(--accent-green);
-  border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 1.75rem;
-  color: white;
-  font-family: var(--font-serif);
-  font-size: 2rem;
-  font-weight: 700;
+}
+
+.hero-emblem img {
+  height: 110px;
+  width: auto;
+  display: block;
 }
 
 .hero-eyebrow {
