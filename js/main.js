@@ -87,4 +87,59 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ─── Team Carousel ───────────────────────────────────
+  const carousel = document.getElementById('teamCarousel');
+  if (carousel) {
+    const cards = carousel.querySelectorAll('.team-card');
+    const prevBtn = document.getElementById('teamPrev');
+    const nextBtn = document.getElementById('teamNext');
+    const dotsEl = document.getElementById('teamDots');
+    let currentIndex = 0;
+
+    function getVisible() {
+      const w = window.innerWidth;
+      if (w <= 480) return 1;
+      if (w <= 900) return 2;
+      return 4; // show all 4 at once on desktop
+    }
+
+    function buildDots() {
+      dotsEl.innerHTML = '';
+      const visible = getVisible();
+      const total = Math.ceil(cards.length / visible);
+      for (let i = 0; i < total; i++) {
+        const d = document.createElement('button');
+        d.className = 'team-dot' + (i === 0 ? ' active' : '');
+        d.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+        d.addEventListener('click', () => goTo(i));
+        dotsEl.appendChild(d);
+      }
+    }
+
+    function goTo(index) {
+      const visible = getVisible();
+      const total = Math.ceil(cards.length / visible);
+      currentIndex = Math.max(0, Math.min(index, total - 1));
+      const cardWidth = cards[0].offsetWidth + 24; // gap = 1.5rem = 24px
+      carousel.style.transform = `translateX(-${currentIndex * cardWidth * visible}px)`;
+      dotsEl.querySelectorAll('.team-dot').forEach((d, i) => {
+        d.classList.toggle('active', i === currentIndex);
+      });
+    }
+
+    prevBtn && prevBtn.addEventListener('click', () => goTo(currentIndex - 1));
+    nextBtn && nextBtn.addEventListener('click', () => goTo(currentIndex + 1));
+
+    // Touch swipe support
+    let touchStartX = 0;
+    carousel.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+    carousel.addEventListener('touchend', e => {
+      const diff = touchStartX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 40) goTo(currentIndex + (diff > 0 ? 1 : -1));
+    }, { passive: true });
+
+    buildDots();
+    window.addEventListener('resize', () => { buildDots(); goTo(0); });
+  }
+
 });

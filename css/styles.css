@@ -1624,3 +1624,170 @@ footer {
     padding-bottom: max(var(--space-md), env(safe-area-inset-bottom));
   }
 }
+
+/* ─── Team Carousel ─────────────────────────────────── */
+.team-carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.team-carousel {
+  display: flex;
+  gap: 1.5rem;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-card {
+  flex: 0 0 calc(25% - 1.125rem);
+  min-width: 200px;
+  text-align: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.75rem 1.25rem 1.5rem;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.team-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  transform: translateY(-3px);
+}
+
+.team-card-photo {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+  border: 3px solid var(--border-subtle);
+}
+
+.team-card-placeholder {
+  background: linear-gradient(135deg, var(--accent-green), var(--accent-saffron));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-card-placeholder span {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  font-family: var(--font-serif);
+}
+
+.team-card-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.3rem;
+}
+
+.team-card-role {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.team-card-role-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 0.25rem;
+}
+
+.team-role-logo {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  object-fit: contain;
+  opacity: 0.85;
+  flex-shrink: 0;
+}
+
+
+.team-carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+
+.team-carousel-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.team-carousel-btn:hover {
+  background: var(--accent-green);
+  border-color: var(--accent-green);
+  color: #fff;
+}
+
+.team-carousel-dots {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.team-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--border-subtle);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.team-dot.active {
+  background: var(--accent-green);
+}
+
+/* ─── Pull Quote ─────────────────────────────────────── */
+.pull-quote {
+  border-left: 4px solid var(--accent-green);
+  padding: 1.25rem 1.5rem;
+  margin: 2rem 0;
+  background: var(--bg-secondary);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.pull-quote p {
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--text-primary);
+  line-height: 1.7;
+  margin: 0 0 0.5rem;
+}
+
+.pull-quote cite {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-style: normal;
+}
+
+/* ─── Team Carousel: Responsive ─────────────────────── */
+@media (max-width: 900px) {
+  .team-card {
+    flex: 0 0 calc(50% - 0.75rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .team-card {
+    flex: 0 0 calc(100% - 0rem);
+  }
+}
