@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Leadership — NYEI</title>
+    <title>Founding Members — NYEI</title>
     <meta name="description"
-        content="Meet the leadership behind NYEI — the founding convenor and the team guiding the National Youth Exposure Initiative." />
+        content="Meet the founding members of NYEI — the people who chose to begin the National Youth Exposure Initiative." />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" type="image/jpeg" href="assets/images/nyei-logo.jpg" />
     <link rel="apple-touch-icon" href="assets/images/nyei-logo.jpg" />
@@ -50,226 +50,97 @@
             <div class="breadcrumb">
                 <a href="index.html">Home</a>
                 <span class="breadcrumb-sep">›</span>
-                <span>Leadership</span>
+                <span>Founding Members</span>
             </div>
-            <h1 class="page-banner-title">Leadership</h1>
-            <p class="page-banner-sub">The individuals guiding NYEI's mission, structure, and institutional
-                relationships.</p>
+            <h1 class="page-banner-title">Founding Members</h1>
+            <p class="page-banner-sub">The people who chose to begin.</p>
         </div>
     </div>
 
-    <!-- Founding Convenor -->
+    <!-- Founding Members Grid -->
     <section class="section">
         <div class="container">
-            <span class="section-eyebrow">Founding Convenor</span>
+            <span class="section-eyebrow">Our Team</span>
             <div class="tricolor-bar"><span></span><span></span><span></span></div>
-            <h2 class="section-title" style="margin-bottom:2.5rem;">Message from the Founding Convenor</h2>
+            <h2 class="section-title" style="margin-bottom:2.5rem;">Founding Members</h2>
 
-            <div class="founder-section">
+            <div class="founders-grid">
+                <!-- Swami Rutvik -->
+                <div class="founder-card" data-member="rutvik" onclick="openProfile('rutvik')">
+                    <div class="founder-card-photo">
+                        <img src="assets/images/founder-rutvik.jpg" alt="Swami Rutvik"
+                            style="width:100%;height:100%;object-fit:cover;object-position:top;" />
+                    </div>
+                    <div class="founder-card-name">Swami Rutvik</div>
+                    <div class="founder-card-role">Founding Convenor</div>
+                </div>
+
+                <!-- Aditya Biradar -->
+                <div class="founder-card" data-member="aditya" onclick="openProfile('aditya')">
+                    <div class="founder-card-photo founder-card-placeholder">
+                        <span>AB</span>
+                    </div>
+                    <div class="founder-card-name">Aditya Biradar</div>
+                    <div class="founder-card-role">Founding Member</div>
+                </div>
+
+                <!-- Shrutika Khot -->
+                <div class="founder-card" data-member="shrutika" onclick="openProfile('shrutika')">
+                    <div class="founder-card-photo founder-card-placeholder">
+                        <span>SK</span>
+                    </div>
+                    <div class="founder-card-name">Shrutika Khot</div>
+                    <div class="founder-card-role">Founding Member</div>
+                </div>
+
+                <!-- Sahil Deore -->
+                <div class="founder-card" data-member="sahil" onclick="openProfile('sahil')">
+                    <div class="founder-card-photo founder-card-placeholder">
+                        <span>SD</span>
+                    </div>
+                    <div class="founder-card-name">Sahil Deore</div>
+                    <div class="founder-card-role">Media Head</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Modal -->
+    <div class="profile-modal-overlay" id="profileModal">
+        <div class="profile-modal">
+            <button class="profile-modal-close" onclick="closeProfile()" aria-label="Close profile">&times;</button>
+
+            <div class="profile-modal-header">
+                <div class="profile-modal-photo" id="modalPhoto"></div>
                 <div>
-                    <div class="founder-message">
-                        <p>
-                            When I began working on NYEI, I was not trying to create a large organization. I was trying
-                            to solve one specific problem that I had seen repeatedly: young people across India —
-                            talented, determined, and capable — who had never had a single genuine encounter with the
-                            professional or institutional world.
-                        </p>
-                        <p>
-                            Not because they lacked the ability. But because no one had ever opened the right door for
-                            them. And in a country as vast and diverse as India, those doors remain invisible to the
-                            majority of students.
-                        </p>
-                        <p>
-                            NYEI was founded on the belief that exposure is not a privilege — it is a right that we, as
-                            educators, professionals, and institutions, have a responsibility to make available. The
-                            Guest Lecture Series, Future Skills programs, and Institutional Exposure visits are our
-                            practical answer to that responsibility.
-                        </p>
-                        <p>
-                            We do this quietly, without ceremony or spectacle. We coordinate with school principals. We
-                            invite working professionals. We bring students to institutions. We measure our work by the
-                            conversations that happen and the perspectives that shift.
-                        </p>
-                        <p>
-                            I invite every educator and institutional leader reading this to consider what role they
-                            might play — not just as a host, but as a committed participant in ensuring that the next
-                            generation of India's students can see, clearly, what they are building toward.
-                        </p>
-                    </div>
-                    <div class="founder-signature">
-                        <div class="founder-sig-name">Swami Rutvik</div>
-                        <div class="founder-sig-role">Founding Convenor, National Youth Exposure Initiative</div>
-                    </div>
-                </div>
-                <div>
-                    <div class="founder-portrait">
-                        <img src="assets/images/founder-rutvik.jpg" alt="Swami Rutvik — Founding Convenor, NYEI"
-                            style="width:100%;border-radius:8px;object-fit:cover;display:block;" />
-                    </div>
-                    <div class="card" style="margin-top:1rem;padding:1.25rem 1.5rem;">
-                        <div
-                            style="font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-muted);margin-bottom:0.75rem;">
-                            About</div>
-                        <div style="font-size:0.92rem;font-weight:700;color:var(--text-primary);margin-bottom:0.5rem;">
-                            Swami Rutvik</div>
-                        <div style="font-size:0.82rem;color:var(--text-secondary);line-height:1.6;">Swami Rutvik is the
-                            Founding Convenor of the National Youth Exposure Initiative (NYEI). He started NYEI with a
-                            clear belief — students in every region deserve access to meaningful exposure and
-                            future-ready learning. His work focuses on connecting institutions with professionals,
-                            leaders, and thinkers to ensure students gain perspectives beyond textbooks.</div>
-                        <div
-                            style="margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid var(--border-subtle);font-size:0.78rem;color:var(--text-muted);">
-                            Founding Convenor<br>National Youth Exposure Initiative</div>
-                    </div>
+                    <div class="profile-modal-name" id="modalName"></div>
+                    <div class="profile-modal-role" id="modalRole"></div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Early Social Engagement -->
-    <section class="section section-alt" style="border-top:1px solid var(--border-subtle);">
-        <div class="container">
-            <span class="section-eyebrow">Background</span>
-            <div class="tricolor-bar"><span></span><span></span><span></span></div>
-            <h2 class="section-title" style="margin-bottom:0.75rem;">Early Social Engagement &amp; Community Work</h2>
-            <p class="section-body" style="margin-bottom:2.5rem;">
-                Before formally structuring NYEI, various grassroots engagement efforts were undertaken, including
-                educational support activities and student outreach initiatives. These early efforts reflect the
-                long-term commitment toward youth development and equal access to opportunity.
-            </p>
-        </div>
-    </section>
-
-    <!-- Advisory Core -->
-    <section class="section section-alt">
-        <div class="container">
-            <span class="section-eyebrow">Leadership Structure</span>
-            <div class="tricolor-bar"><span></span><span></span><span></span></div>
-            <h2 class="section-title" style="margin-bottom:0.75rem;">How NYEI Is Led</h2>
-            <p class="section-body" style="margin-bottom:2.5rem;">
-                NYEI operates through a small, coordinated leadership team that manages program design, institutional
-                partnerships, and day-to-day operations. All leadership positions are non-commercial and mission-driven.
-            </p>
-            <div class="grid-3">
-                <div class="card" style="text-align:center;">
-                    <div
-                        style="width:52px;height:52px;background:var(--bg-secondary);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:1.4rem;font-family:var(--font-serif);font-weight:700;color:var(--accent-green);">
-                        F</div>
-                    <div class="card-title">Founding Convenor</div>
-                    <p class="card-text">Responsible for overall vision, institutional partnerships, and strategic
-                        direction of NYEI.</p>
+            <div class="profile-modal-body">
+                <div class="profile-section">
+                    <p id="modalIntro"></p>
                 </div>
-                <div class="card" style="text-align:center;">
-                    <div
-                        style="width:52px;height:52px;background:var(--bg-secondary);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:1.4rem;font-family:var(--font-serif);font-weight:700;color:var(--accent-saffron);">
-                        C</div>
-                    <div class="card-title">Program Coordinators</div>
-                    <p class="card-text">Manage individual programs — scheduling, speaker coordination, and partner
-                        institution communication.</p>
+                <div class="profile-section">
+                    <div class="profile-section-label">Personal View</div>
+                    <p id="modalView"></p>
                 </div>
-                <div class="card" style="text-align:center;">
-                    <div
-                        style="width:52px;height:52px;background:var(--bg-secondary);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:1.4rem;font-family:var(--font-serif);font-weight:700;color:var(--text-muted);">
-                        A</div>
-                    <div class="card-title">Advisory Council</div>
-                    <p class="card-text">Educators, researchers, and professionals who provide guidance on program
-                        design and institutional relevance. To be announced.</p>
+                <div class="profile-section">
+                    <div class="profile-section-label">Commitment</div>
+                    <p id="modalCommitment"></p>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Team Section -->
-    <section class="section" style="border-top:1px solid var(--border-subtle);">
-        <div class="container">
-            <span class="section-eyebrow">Core Team</span>
-            <div class="tricolor-bar"><span></span><span></span><span></span></div>
-            <h2 class="section-title" style="margin-bottom:0.5rem;">NYEI Core Team</h2>
-            <p class="section-body" style="margin-bottom:2.5rem;max-width:700px;">
-                The National Youth Exposure Initiative is an independent student initiative driven by a small group
-                of committed students who believe in expanding exposure and opportunities for young minds across Bharat.
-            </p>
-
-            <div class="team-carousel-wrapper">
-                <div class="team-carousel" id="teamCarousel">
-                    <!-- Swami Rutvik -->
-                    <div class="team-card">
-                        <div class="team-card-photo">
-                            <img src="assets/images/founder-rutvik.jpg" alt="Swami Rutvik"
-                                style="width:100%;height:100%;object-fit:cover;object-position:top;" />
-                        </div>
-                        <div class="team-card-name">Swami Rutvik</div>
-                        <div class="team-card-role-wrap">
-                            <img src="assets/images/nyei-logo.jpg" alt="NYEI" class="team-role-logo" />
-                            <span class="team-card-role">Founding Convenor</span>
-                        </div>
-                    </div>
-                    <!-- Aditya Biradar -->
-                    <div class="team-card">
-                        <div class="team-card-photo team-card-placeholder">
-                            <span>AB</span>
-                        </div>
-                        <div class="team-card-name">Aditya Biradar</div>
-                        <div class="team-card-role-wrap">
-                            <img src="assets/images/nyei-logo.jpg" alt="NYEI" class="team-role-logo" />
-                            <span class="team-card-role">Core Member</span>
-                        </div>
-                    </div>
-                    <!-- Shrutika Khot -->
-                    <div class="team-card">
-                        <div class="team-card-photo team-card-placeholder">
-                            <span>SK</span>
-                        </div>
-                        <div class="team-card-name">Shrutika Khot</div>
-                        <div class="team-card-role-wrap">
-                            <img src="assets/images/nyei-logo.jpg" alt="NYEI" class="team-role-logo" />
-                            <span class="team-card-role">Core Member</span>
-                        </div>
-                    </div>
-                    <!-- Sahil Deore -->
-                    <div class="team-card">
-                        <div class="team-card-photo team-card-placeholder">
-                            <span>SD</span>
-                        </div>
-                        <div class="team-card-name">Sahil Deore</div>
-                        <div class="team-card-role-wrap">
-                            <img src="assets/images/nyei-logo.jpg" alt="NYEI" class="team-role-logo" />
-                            <span class="team-card-role">Media Head</span>
-                        </div>
-                    </div>
+            <div class="profile-modal-signature">
+                <div class="signature-space">
+                    <span class="signature-placeholder">Signature</span>
                 </div>
-                <div class="team-carousel-controls">
-                    <button class="team-carousel-btn" id="teamPrev" aria-label="Previous member">&#8592;</button>
-                    <div class="team-carousel-dots" id="teamDots"></div>
-                    <button class="team-carousel-btn" id="teamNext" aria-label="Next member">&#8594;</button>
-                </div>
+                <div class="signature-name" id="modalSigName"></div>
+                <div class="signature-role" id="modalSigRole"></div>
             </div>
         </div>
-    </section>
-
-    <!-- Join Leadership -->
-    <section class="section">
-        <div class="container" style="max-width:660px;">
-            <span class="section-eyebrow">Opportunities</span>
-            <div class="tricolor-bar"><span></span><span></span><span></span></div>
-            <h2 class="section-title">Serve as an Advisory Member</h2>
-            <div class="section-body">
-                <p>
-                    NYEI is in the process of forming an Advisory Council — a group of educators, institutional leaders,
-                    and domain professionals who can help shape the initiative's academic credibility and program
-                    quality.
-                </p>
-                <p>
-                    Advisory membership is voluntary and non-commercial. It requires approximately two to four hours of
-                    engagement per quarter. If you are an educator, researcher, or professional who believes in NYEI's
-                    mission and would like to contribute meaningfully, we welcome your expression of interest.
-                </p>
-            </div>
-            <div style="margin-top:1.75rem;">
-                <a href="contact.html" class="btn btn-outline">Express Interest</a>
-            </div>
-        </div>
-    </section>
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -277,11 +148,11 @@
             <div class="footer-tricolor"><span></span><span></span><span></span></div>
             <div class="footer-top">
                 <div>
-                    <img src="assets/images/nyei-logo.jpg" alt="NYEI Logo" style="height:48px;width:auto;border-radius:6px;margin-bottom:0.75rem;display:block;" />
+                    <img src="assets/images/nyei-logo.jpg" alt="NYEI Logo"
+                        style="height:48px;width:auto;border-radius:6px;margin-bottom:0.75rem;display:block;" />
                     <div class="footer-brand-name">National Youth Exposure Initiative</div>
                     <p class="footer-brand-desc">Connecting students with real people and real institutions across
                         India.</p>
-
                 </div>
                 <div>
                     <div class="footer-col-title">Navigation</div>
@@ -298,8 +169,8 @@
                     <div class="footer-col-title">Programs</div>
                     <ul class="footer-links">
                         <li><a href="programs.html#guest-lectures" class="footer-link">Guest Lecture Series</a></li>
-                        <li><a href="programs.html#future-skills" class="footer-link">Future Skills & AI</a></li>
-                        <li><a href="programs.html#exposure" class="footer-link">Institutional Exposure</a></li>
+                        <li><a href="programs.html#ai-awareness" class="footer-link">AI Awareness Workshops</a></li>
+                        <li><a href="programs.html#future-skills" class="footer-link">Future Skills Sessions</a></li>
                     </ul>
                 </div>
                 <div>
@@ -315,16 +186,95 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <div class="footer-bottom-left">
-                    © 2025 National Youth Exposure Initiative. All rights reserved.
-                </div>
-                <div class="footer-bottom-right">Serving institutions across India.</div>
+                <div class="footer-bottom-left">© 2025 National Youth Exposure Initiative. All rights reserved.</div>
+                <div class="footer-bottom-right">An independent student initiative · Serving institutions across India
                 </div>
             </div>
         </div>
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+        // --- Founding Member Profile Data ---
+        const memberData = {
+            rutvik: {
+                name: 'Swami Rutvik',
+                role: 'Founding Convenor',
+                photo: '<img src="assets/images/founder-rutvik.jpg" alt="Swami Rutvik" style="width:100%;height:100%;object-fit:cover;object-position:top;" />',
+                intro: 'NYEI started from a simple observation — exposure is not equally distributed. I believe small, consistent efforts can create meaningful change for students.',
+                view: 'Instead of only discussing how we can contribute to the future of Bharat, I chose to begin contributing in my own way through NYEI.',
+                commitment: 'To build NYEI with clarity, consistency, and long-term intent.'
+            },
+            aditya: {
+                name: 'Aditya Biradar',
+                role: 'Founding Member',
+                photo: '<span>AB</span>',
+                intro: 'I believe students should not wait for opportunities — they should take initiative and act. Small actions, when done consistently, can create real impact.',
+                view: 'Through NYEI, we are contributing in our own way and standing with students as they grow and explore their potential.',
+                commitment: 'To actively contribute in building meaningful student-led initiatives.'
+            },
+            shrutika: {
+                name: 'Shrutika Khot',
+                role: 'Founding Member',
+                photo: '<span>SK</span>',
+                intro: 'I believe discipline, responsibility, and service are values that shape strong individuals, often seen in fields like the armed forces.',
+                view: 'Through NYEI, I want to contribute by supporting students and helping them gain the exposure they need to grow with confidence.',
+                commitment: 'To help expand NYEI\'s reach and connect with more students.'
+            },
+            sahil: {
+                name: 'Sahil Deore',
+                role: 'Media Head',
+                photo: '<span>SD</span>',
+                intro: 'I have always been interested in capturing moments and telling stories through visuals. Videography allows me to present real work in a meaningful way.',
+                view: 'Through NYEI, I want to use my skills to document our journey and ensure that the impact we create reaches more people.',
+                commitment: 'To present NYEI\'s work with clarity and authenticity.'
+            }
+        };
+
+        function openProfile(key) {
+            const m = memberData[key];
+            if (!m) return;
+
+            const modal = document.getElementById('profileModal');
+            const photoEl = document.getElementById('modalPhoto');
+
+            // Set photo
+            if (key === 'rutvik') {
+                photoEl.innerHTML = m.photo;
+                photoEl.className = 'profile-modal-photo';
+            } else {
+                photoEl.innerHTML = m.photo;
+                photoEl.className = 'profile-modal-photo profile-modal-photo-placeholder';
+            }
+
+            document.getElementById('modalName').textContent = m.name;
+            document.getElementById('modalRole').textContent = m.role;
+            document.getElementById('modalIntro').textContent = m.intro;
+            document.getElementById('modalView').textContent = m.view;
+            document.getElementById('modalCommitment').textContent = m.commitment;
+            document.getElementById('modalSigName').textContent = m.name;
+            document.getElementById('modalSigRole').textContent = m.role + ', NYEI';
+
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeProfile() {
+            const modal = document.getElementById('profileModal');
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Close on overlay click
+        document.getElementById('profileModal').addEventListener('click', function (e) {
+            if (e.target === this) closeProfile();
+        });
+
+        // Close on Escape key
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') closeProfile();
+        });
+    </script>
 </body>
 
 </html>
