@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nyeiofficial.in/sitemap.xml
